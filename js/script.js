@@ -52,6 +52,7 @@ document.getElementById('btn-apply').addEventListener('click', function () {
     const inputCoupon = document.getElementById('coupon-input');
     const inputCouponValue = inputCoupon.value;
     
+    
 
     const price = document.getElementById('total-price');
     const priceString = price.innerText;
@@ -82,8 +83,8 @@ document.getElementById('btn-apply').addEventListener('click', function () {
     if (inputCouponValue === 'SELL200') {
         mainBalance.innerText = afterTotalTofixed;
     }
-    
-    inputCoupon.innerText = '';
+
+    inputCoupon.value = '';
 })
 
 
