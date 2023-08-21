@@ -75,9 +75,10 @@ document.getElementById('btn-apply').addEventListener('click', function(){
     }
     
     const afterTotal = mainBalanceNumber - disPrice;
+    const afterTotalTofixed = afterTotal.toFixed(2);
 
     if(inputCouponValue === 'SELL200'){
-        mainBalance.innerText = afterTotal;
+        mainBalance.innerText = afterTotalTofixed;
     }
 })
 
